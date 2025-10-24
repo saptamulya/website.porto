@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio - Sapta Mulya Putra (SPA)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="frame" role="application" aria-label="Portfolio Sapta">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" aria-label="Sidebar profil">
+      <div style="display:flex; gap:12px; align-items:center; width:100%;">
+        <div class="photo" aria-hidden="true">
+          <img src="foto/foto-sapta1.jpg.jpeg" alt="Foto Sapta">
+        </div>
+        <div style="flex:1;">
+     <div class="name">SAPTAMULYAPUTRA</div>
+          <div class="subtitle">Pelajar SMK Teknik Komputer & Jaringan</div>
+        </div>
+        <button class="hamburger" id="menuToggle" aria-label="Tampilkan menu">☰</button>
+      </div>
+
+      <div class="contact" aria-hidden="false">
+        <div><strong>Email:</strong> saptamulyaputra@gmail.com</div>
+        <div><strong>Alamat:</strong> Jawa Timur, Kab. Blitar</div>
+      </div>
+
+      <nav class="nav" role="navigation" aria-label="Navigasi utama">
+        <button data-target="home" class="active">Home</button>
+        <button data-target="about">About Me</button>
+        <button data-target="skills">Skills</button>
+        <button data-target="pendidikan">Pendidikan</button>
+      </nav>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content" role="main">
+      <div class="topbar">
+        <div class="title" id="pageTitle">Home</div>
+        <div style="color:var(--muted); font-size:13px;">@ Portfolio saptamulyaputra</div>
+      </div>
+
+      <div class="sections" id="sections">
+        <!-- HOME -->
+        <section id="home" class="section show" aria-labelledby="homeTitle">
+          <div class="sec-left" aria-hidden="true">
+            <img src="foto/fotohome.jpeg" alt="foto samping">
+            <div class="sec-card">Siap berkarya di dunia teknologi</div>
+          </div>
+          <div class="sec-right">
+            <h2 id="homeTitle">"HALO" Saya Sapta mulya putra</h2>
+            <p>Saya adalah pelajar SMK jurusan Teknik Komputer dan Jaringan. Berminat pada jaringan komputer, perakitan PC, dan administrasi server. Suka belajar teknologi baru dan bekerja secara tim maupun mandiri.</p>
+
+            <div class="list" aria-hidden="false">
+              <div class="chip">Alamat: Jawa Timur, Kab. Blitar</div>
+              <div class="chip">Email:saptamuliaputra@gmail.com</div>
+              <div class="chip">Hobi: Musik, Eksperimen IT</div>
+              <div class="chip">Status: Pelajar (17 tahun)</div>
+            </div>
+
+            <div class="pager" style="margin-top:18px;">
+              <div></div>
+              <div>
+                <button class="btn" data-action="next">Lanjut ➜</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section" aria-labelledby="aboutTitle">
+          <div class="sec-left">
+            <img src="foto/fotoabout3.jpg" alt="foto about">
+            <div class="sec-card">Belajar hal-hal baru dan hobby bermain musik</div>
+          </div>
+          <div class="sec-right">
+            <h2 id="aboutTitle">About Me</h2>
+            <p>Saya memiliki minat di bidang jaringan komputer, konfigurasi perangkat, dan administrasi server. Di luar pembelajaran, saya suka bermain musik bersama teman untuk mengekspresikan kreativitas.</p>
+            <p>Saya selalu mencoba menggabungkan pembelajaran sekolah dan pengalaman di luar sekolah untuk menambah wawasan praktis.</p>
+
+            <div class="pager" style="margin-top:12px;">
+              <div>
+                <button class="btn ghost" data-action="prev">◀ Kembali</button>
+              </div>
+              <div>
+                <button class="btn" data-action="next">Lanjut ➜</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section" aria-labelledby="skillsTitle">
+          <div class="sec-left">
+            <img src="foto/fotoskil.jpg" alt="foto skills">
+            <div class="sec-card">Teknik & praktik</div>
+          </div>
+          <div class="sec-right">
+            <h2 id="skillsTitle">Skills</h2>
+
+            <div style="display:flex; gap:12px; flex-wrap:wrap;">
+              <div class="chip">Instalasi OS (Windows & Linux)</div>
+              <div class="chip">IP Addressing & Subnetting</div>
+              <div class="chip">Cisco Packet Tracer</div>
+              <div class="chip">Crimping Kabel</div>
+              <div class="chip">Kerja Tim</div>
+            </div>
+
+            <h3 style="margin-top:12px; color:var(--muted);">Sertifikat terkait</h3>
+            <ul style="margin-top:8px; list-style: none;">
+              <li style="padding:8px 0; border-bottom:1px dashed rgba(255,255,255,0.04);">FCF - Introduction to the Threat Landscape 2.0</li>
+              <li style="padding:8px 0; border-bottom:1px dashed rgba(255,255,255,0.04);">FCF - Getting Started in Cybersecurity 2.0</li>
+              <li style="padding:8px 0;">CCNA - Introduction to Networks</li>
+            </ul>
+
+            <div class="pager" style="margin-top:12px;">
+              <div>
+                <button class="btn ghost" data-action="prev">◀ Kembali</button>
+              </div>
+              <div>
+                <button class="btn" data-action="next">Lanjut ➜</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+   
+
+        <!-- PENDIDIKAN -->
+        <section id="pendidikan" class="section" aria-labelledby="eduTitle">
+          <div class="sec-left">
+            <img src="foto/fotologosmk.jpg.png" alt="foto pendidikan">
+            <div class="sec-card">SMKN 1 Nglegok</div>
+          </div>
+          <div class="sec-right">
+            <h2 id="eduTitle">Pendidikan</h2>
+            <p><strong>SMKN 1 NGLEGOK (2024 - Sekarang)</strong></p>
+            <p>Saya melanjutkan pendidikan ke jurusan Teknik Komputer dan Jaringan. Tujuan saya adalah menguasai keterampilan pengoperasian komputer dan jaringan agar relevan dengan perkembangan teknologi saat ini.</p>
+
+            <div class="pager" style="margin-top:12px;">
+              <div>
+                <button class="btn ghost" data-action="prev">◀ Kembali</button>
+                <button class="btn ghost" data-action="prev">lanjut</button>
+              </div>
+              <div>
+                <button class="btn" onclick="goTo('home')">Selesai ✓</button>
+              </div>
+            </div>
+          </div>
+        </section>
+         
+  <script src="main.js"></script>
+
+</body>
+</html>
+     
